@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+</head>
+<body>
+    <header id="home">
+        <div class="container">
+            <h1>John Doe</h1>
+            <p>Web Developer</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm a web developer with a passion for creating beautiful and functional websites. I have experience with HTML, CSS, JavaScript, and various web frameworks.</p>
+        </section>
+
+        <section id="skills" class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>SQL</li>
+                <li>Bootstrap</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <img src="images/project1.jpg" alt="Project 1">
+                <div class="project-info">
+                    <h3>Project 1</h3>
+                    <p>A description of my first project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button onclick="openModal('modal1')">View Details</button>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/project2.jpg" alt="Project 2">
+                <div class="project-info">
+                    <h3>Project 2</h3>
+                    <p>A description of my second project. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <button onclick="openModal('modal2')">View Details</button>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/project3.jpg" alt="Project 3">
+                <div class="project-info">
+                    <h3>Project 3</h3>
+                    <p>A description of my third project. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <button onclick="openModal('modal3')">View Details</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 John Doe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for Projects -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Project 1</h2>
+            <p>Detailed description of Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Tools used: HTML, CSS, JavaScript, Bootstrap</p>
+            <a href="#">Visit Project</a>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Project 2</h2>
+            <p>Detailed description of Project 2. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p>Tools used: React, Node.js, MongoDB</p>
+            <a href="#">Visit Project</a>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>Project 3</h2>
+            <p>Detailed description of Project 3. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Tools used: HTML, CSS, JavaScript</p>
+            <a href="#">Visit Project</a>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
